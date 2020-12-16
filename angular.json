@@ -24,9 +24,15 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.slim.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "exa3-fontend-franco-cabanillas"
+    }
+  },
+  "defaultProject": "exa3-fontend-franco-cabanillas",
+  "cli": {
+    "analytics": "6ce260d2-fbc3-4d5d-a240-ea0f690bd519"
+  }
 }
