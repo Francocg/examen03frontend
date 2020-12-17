@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../../services/auth.service';
-
+import { Usuario } from 'src/app/models/usuario';
 import swal from 'sweetalert2';
 import { Router } from '@angular/router';
 @Component({
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-
+  usuario:Usuario;
   constructor(public authService:AuthService, private router:Router) { }
   
   ngOnInit(): void {

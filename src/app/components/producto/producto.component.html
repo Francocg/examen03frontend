@@ -1,39 +1,24 @@
-<div class="container" style="max-width: 50%; margin-top: 50px;">
+<div class="container" style="max-width: 80%; margin-top: 50px; margin-left: -50px;">
+  <div class="input-group md-form form-sm form-2 pl-0">
+    <h6 style="margin-left: 400px;">Cliente: </h6>
+    <input class="form-control my-0 py-1 red-border col-7" type="text" placeholder="Buscar" style="margin-left: 50px;" aria-label="Search">
+  
+    <div class="input-group-append">
+    </div><br><br><br>
+  </div>
   <div class="row justify-content-md-center">
     <div class="col col-4">
-      <div class="card">
-        <div class="card-header bg-primary">
-          <h5 class="card-title" style="color: white;">{{titulo}} Producto</h5>
-        </div>
-        <div class="card-body">
-          <div class="form-group">
-            <label for="a">Nombre</label>
-            <input type="text" name="nombre" class="form-control" [(ngModel)]="productoModel.nomprod">
-
-            <input type="hidden" name="idrol" class="form-control" [(ngModel)]="productoModel.idproducto">
-          </div>
-          <div class="form-group">
-            <label for="a">Precio</label>
-            <input type="text" name="precio" class="form-control" [(ngModel)]="productoModel.precio">
-          </div>
-          <div class="form-group">
-            <label for="">Stock</label>
-            <input type="text" name="stock" class="form-control" [(ngModel)]="productoModel.stock">
-          </div>
-          <div class="form-group">
-            <button class="btn btn-primary" (click)="create()">{{accion}}</button>
-          </div>
-        </div>
-      </div>
+     
     </div>
     <div class="col-8">
       <table class="table">
         <thead>
           <tr>
-            <th scope="col">ID</th>
-            <th scope="col">PRODUCTO</th>
-            <th scope="col">PRECIO</th>
-            <th scope="col">STOCK</th>
+            <th scope="col">Item</th>
+            <th scope="col">cantidad</th>
+            <th scope="col">producto</th>
+            <th scope="col">precio</th>
+            <th scope="col">importe</th>
             <th scope="coll" colspan="2">Acción</th>
           </tr>
         </thead>

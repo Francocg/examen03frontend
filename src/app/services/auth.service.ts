@@ -31,7 +31,7 @@ export class AuthService {
   login(usuario:Usuario):Observable<any>{
     const urlEndpoint = 'http://localhost:8080/oauth/token';
 
-    const credenciales = btoa('musa' + ':' + '1234567');
+    const credenciales = btoa('franco' + ':' + '1234567');
 
     const httpHeaders = new HttpHeaders({'Content-Type': 'application/x-www-form-urlencoded',
       'Authorization':'Basic ' + credenciales});
